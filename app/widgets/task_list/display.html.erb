@@ -1,0 +1,8 @@
+<%= widget_div do %>
+  <h2>All Tasks</h2>
+  <ul>
+    <% for task in @tasks %>
+      <%= render :view => :task, :locals => { :task => task } %>
+    <% end %>
+  </ul>
+<% end %>
